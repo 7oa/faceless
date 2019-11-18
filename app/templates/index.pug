@@ -1,0 +1,58 @@
+extends core/_template
+
+append sharedVars
+	- var activeMenu = 'Home';
+
+block title
+	title Home
+
+block content
+	.workarea
+		.home-banner(style="background-image:url('images/banner.png')")
+			div
+				._title Surf the web 
+				._subtitle Your trusted VPN provider
+			._button
+				button.button.button_wine Get VPN
+		.matters-container
+			.container
+				.title What matters to you in web surfing?
+			.matters-wrapper
+				details._details 
+					summary._summary Safe travel
+					._more Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum beatae aspernatur sint minima ut repellendus, inventore consectetur totam, dolorum nulla recusandae nesciunt provident animi debitis reiciendis repellat architecto blanditiis dolores.
+				details._details
+					summary._summary Data Protection
+					._more Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum beatae aspernatur sint minima ut repellendus, inventore consectetur totam, dolorum nulla recusandae nesciunt provident animi debitis reiciendis repellat architecto blanditiis dolores.
+				details._details 
+					summary._summary No restrictions
+					._more Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum beatae aspernatur sint minima ut repellendus, inventore consectetur totam, dolorum nulla recusandae nesciunt provident animi debitis reiciendis repellat architecto blanditiis dolores.
+		.how-works-conatiner.container
+			.title How VPN works?
+			.how-works-wrapper
+				._item
+					._img
+						img(src="images/hiw1.png", alt="")
+					._description Data is transmitted from your client machine to a point in your VPN network.
+				._item
+					._img
+						img(src="images/hiw2.png", alt="")
+					._description The VPN point encrypts your data and sends it through the internet.
+				._item
+					._img
+						img(src="images/hiw3.png", alt="")
+					._description Another point in your VPN network decrypts your data and sends it to the appropriate internet resource.
+		div.container
+			.title Explore the benefits of Faceless.Me Premium
+
+		div.container
+			.title Why People Choose Faceless.me?
+
+		div баннеры
+
+		div.container
+			.title Get Faceless.Me mobile apps
+			div Download our apps for iOS and Android platforms.
+
+
+	//end workarea

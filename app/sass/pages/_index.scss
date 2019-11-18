@@ -1,0 +1,103 @@
+.home-banner {
+  height: 435px;
+  background-color: $gray-eb;
+  padding-top: 45px;
+  padding-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 37px;
+  &__title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $gray-33;
+  }
+  &__subtitle {
+    font-size: 20px;
+    color: $gray-33;
+  }
+  &__button {
+    width: 210px;
+    margin: 0 auto;
+  }
+}
+
+.title {
+  font-size: 24px;
+  color: $gray-33;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.matters-container {
+  margin-bottom: 37px;
+}
+
+.matters-wrapper {
+  &__details {
+    margin-bottom: 3px;
+  }
+  &__summary {
+    background-color: $blue-6e;
+    text-align: center;
+    color: $white;
+    font-size: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &::-webkit-details-marker {
+      display: none;
+    }
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 10%;
+      top: 45%;
+      border: 8px solid transparent;
+      border-top: 10px solid $white;
+    }
+  }
+  &__more {
+    padding: 20px;
+  }
+}
+.how-works-conatiner {
+  margin-bottom: 37px;
+}
+.how-works-wrapper {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:after {
+      content: "";
+      width: 24px;
+      height: 95px;
+      background-image: url("images/hiw-sep.png");
+      margin: 15px auto;
+    }
+    &:last-of-type {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  &__img {
+    margin-bottom: 5px;
+  }
+  &__description {
+    color: $gray-ab;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+  }
+}

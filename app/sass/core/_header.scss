@@ -1,0 +1,34 @@
+.header {
+  background: $white;
+  height: 56px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+}
+.avatar {
+  @include bg-img(cover);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: block;
+}
+.menu {
+  height: 24px;
+  width: 30px;
+  span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: $blue-64;
+    &:nth-child(1) {
+      margin-bottom: 7px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 7px;
+    }
+  }
+}
