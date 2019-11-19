@@ -9,7 +9,7 @@
   text-align: center;
   background-position: center bottom;
   background-repeat: no-repeat;
-  margin-bottom: 37px;
+
   &__title {
     font-weight: 700;
     margin-bottom: 15px;
@@ -36,12 +36,15 @@
 }
 
 .matters-container {
-  margin-bottom: 37px;
+  padding-top: 37px;
 }
 
 .matters-wrapper {
   &__details {
     margin-bottom: 3px;
+    &:focus {
+      outline: none;
+    }
   }
   &__summary {
     background-color: $blue-6e;
@@ -53,6 +56,9 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    &:focus {
+      outline: none;
+    }
     &::-webkit-details-marker {
       display: none;
     }
@@ -71,7 +77,8 @@
   }
 }
 .how-works-conatiner {
-  margin-bottom: 37px;
+  padding-top: 37px;
+  padding-bottom: 37px;
 }
 .how-works-wrapper {
   &__item {
@@ -99,5 +106,158 @@
     font-size: 14px;
     font-style: italic;
     text-align: center;
+  }
+}
+.benefits-container {
+  background-color: $gray-f0;
+  padding-top: 27px;
+  margin-bottom: 37px;
+  padding-bottom: 20px;
+}
+.benefits-card {
+  background-color: $white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  &__header {
+    height: 60px;
+    color: $white;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    &_wine {
+      background-color: $wine;
+    }
+    &_blue {
+      background-color: $blue-7d;
+    }
+  }
+  &__body {
+    padding: 0 30px;
+  }
+  &__description {
+    font-size: 22px;
+    padding: 40px 0 30px;
+    text-align: center;
+  }
+  &__table {
+    margin-bottom: 30px;
+  }
+  &__table-row {
+    border-top: 1px solid $gray-eb;
+    height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  &__table-col {
+    &_label {
+      font-size: 15px;
+      padding-left: 8px;
+      flex: 1 1 auto;
+    }
+    &_value {
+      font-size: 22px;
+      font-weight: $medium;
+    }
+  }
+  &__ul {
+    @include uldev();
+    margin-bottom: 30px;
+    margin-top: 25px;
+  }
+  &__li {
+    font-size: 15px;
+    padding: 5px 0 5px 28px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    &_included {
+      background-image: url("images/included.png");
+    }
+    &_not-included {
+      background-image: url("images/not-included.png");
+    }
+  }
+}
+.banners-block {
+  background-color: $gray-f0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  &__banner {
+    margin: 9px;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+.apps-container {
+  padding-top: 37px;
+  padding-bottom: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__description {
+    font-size: 18px;
+    text-align: center;
+    color: $black;
+    margin-bottom: 20px;
+  }
+  &__button {
+    display: block;
+    margin-bottom: 5px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+.why-choose-container {
+  padding-top: 27px;
+  padding-bottom: 25px;
+  &__list {
+    display: flex;
+    height: 300px;
+    align-items: stretch;
+    overflow-x: auto;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    margin: 0 -15px;
+    &::-webkit-scrollbar {
+      width: 0 !important;
+    }
+  }
+  &__item {
+    flex: 0 0 auto;
+    width: 70%;
+    max-width: 245px;
+    background-color: $gray-eb;
+    border-radius: 10px;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+  }
+  &__img {
+    @include bg-img(cover);
+    margin-bottom: 15px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: block;
+  }
+  &__name {
+    margin-bottom: 27px;
+  }
+  &__review {
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
+    color: $gray-66;
   }
 }
