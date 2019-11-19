@@ -1,0 +1,47 @@
+.about-container {
+  padding-top: 27px;
+  padding-bottom: 50px;
+}
+.about-links {
+  margin-bottom: 30px;
+  &__item {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 16px;
+    color: $blue-33;
+  }
+}
+.about-block {
+  margin-bottom: 20px;
+  &__title {
+    font-weight: $bold;
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+  &__description {
+    font-size: 13px;
+    ol {
+      padding-left: 15px;
+      margin: 0;
+    }
+  }
+}
+.our-friends {
+  padding-top: 37px;
+  &__title {
+    font-weight: $bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__logo {
+    padding: 9px 2px;
+  }
+}

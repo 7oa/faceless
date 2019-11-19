@@ -1,0 +1,68 @@
+extends core/_template
+
+append sharedVars
+	- var activeMenu = 'About';
+
+block title
+	title About
+
+block content
+	.workarea
+		.top-banner(style="background-image:url('images/banner2.png')")
+			div
+				._title About our company
+				._subtitle Years of high-quality data protection
+			._button
+				button.button.button_wine Get VPN
+		.about-container.container
+			.about-links
+				a._item(href="#who-we-are") Who we are
+				a._item(href="#works-at-faceless") Who works at Faceless.Me
+				a._item(href="#offer-to-you") What we offer to you
+				a._item(href="#our-principles") Our principles
+			.about-block#who-we-are
+				._title Who we are
+				._description.
+					Faceless.ME is one of the leading companies providing VPN (virtual private network) services to numerous international customers. We have been operating for a few years now and have accumulated an impressive customer base. Our clients are willing, due to their own reasons, to conceal their identity and surf the Internet anonymously, which we can do with pleasure at prices that are more than just reasonable. We have all it takes to protect your anonymity when surfing the Internet: experience, expertise, and desire to help.
+			.about-block#works-at-faceless
+				._title Who works at Faceless.Me
+				._description.
+					Our company employs the best professionals who know everything about VPN software and are ready to provide qualified consultations if you have any doubts still. We take proud of the high level of services offered, as well as advantageous conditions our clients can enjoy.
+			.about-block#offer-to-you
+				._title What we offer to you
+				._description
+					ol
+						li Strong customer service culture, which allows taking the best care of our customers and solving any problems in minutes. You can contact us whenever it's convenient for you and have your concerns addressed in the most efficient way possible.
+						li Competitive prices and advantageous deals for regular and new customers.
+						li High-quality service, which translates into complete safety and anonymity when browsing.
+			.about-block#our-principles
+				._title Our principles
+				._description.
+					Freedom to get information is one of your fundamental rights, and our goal is to make sure you do so without any obstacles on the way. We offer VPN packages that will ensure safe and anonymous browsing whenever and wherever you go online. It's time you took control over your life and made sure it belongs to no one else. Owning a VPN is the first step towards complete freedom and anonymity, and our company is right there to help you make this step with confidence.
+
+			.our-friends
+				._title Our friends
+				._logos
+					._logo
+						img(src="images/BS4D_award5.png", alt="")
+					._logo
+						img(src="images/programosy_editorsreview.png", alt="")
+					._logo
+						img(src="images/BFD_award5.png", alt="")
+					._logo
+						img(src="images/filefishstick.png", alt="")
+					._logo
+						img(src="images/award_130x60_listed.png", alt="")
+					._logo
+						img(src="images/editorsChoice.png", alt="")
+					._logo
+						img(src="images/PortalProgramas.png", alt="")
+					._logo
+						img(src="images/FindMySoft.png", alt="")
+					._logo
+						img(src="images/iphonari.png", alt="")
+					._logo
+						img(src="images/ipaddisti.png", alt="")
+
+
+	//end workarea
