@@ -6,7 +6,20 @@
   text-transform: uppercase;
   color: $white;
   border-radius: 5px;
+  display: block;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   &_wine {
     background-color: $wine;
+  }
+  &_blue {
+    background-color: $blue-7d;
+  }
+  &_sm {
+    font-size: 17px;
+    height: 40px;
   }
 }

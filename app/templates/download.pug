@@ -1,0 +1,44 @@
+extends core/_template
+
+append sharedVars
+	- var activeMenu = 'About';
+
+block title
+	title About
+
+block content
+	.workarea
+		.download-header
+			._title Download Faceless.ME VPN
+			._subtitle Only 5MB, no registration required, absolutely free
+		.download-container.container
+			.download-item
+				._img
+					img(src="images/IOS.png", alt="")
+				._title IOS
+				._subtitle Supported on IOS 4.3+
+				a._button.-app(href="#")
+						img(src="images/AppStore.png", alt="")
+			.download-item
+				._img
+					img(src="images/Android.png", alt="")
+				._title Android
+				._subtitle Supported on Android 7.0+
+				a._button.-app(href="#")
+						img(src="images/GoogleApp.png", alt="")
+			.download-item
+				._img
+					img(src="images/MacOS.png", alt="")
+				._title Mac OS
+				._subtitle Supported on 10.12+
+				._button.-download
+					a.button.-blue.-sm Download
+			.download-item
+				._img
+					img(src="images/Windows.png", alt="")
+				._title Windows
+				._subtitle Supported on Windows 7+
+				._button.-download
+					a.button.-blue.-sm Download
+
+	//end workarea
